@@ -4,7 +4,7 @@ import com.leroy.ronan.hexagonalpoetry.domain.LibraryException;
 import com.leroy.ronan.hexagonalpoetry.domain.PoetryLibrary;
 import com.leroy.ronan.hexagonalpoetry.domain.PoetryReader;
 import com.leroy.ronan.hexagonalpoetry.domain.VersesProvider;
-import com.leroy.ronan.hexagonalpoetry.left.ConsoleAdapter;
+import com.leroy.ronan.hexagonalpoetry.left.console.ConsoleAdapter;
 import com.leroy.ronan.hexagonalpoetry.right.PoetryLibraryFileAdapter;
 
 import java.util.Scanner;

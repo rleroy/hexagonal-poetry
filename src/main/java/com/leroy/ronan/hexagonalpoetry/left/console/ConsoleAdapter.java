@@ -1,4 +1,4 @@
-package com.leroy.ronan.hexagonalpoetry.left;
+package com.leroy.ronan.hexagonalpoetry.left.console;
 
 import com.leroy.ronan.hexagonalpoetry.domain.LibraryException;
 import com.leroy.ronan.hexagonalpoetry.domain.VersesProvider;
