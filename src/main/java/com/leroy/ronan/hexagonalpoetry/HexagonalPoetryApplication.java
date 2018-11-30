@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class HexagonalPoetryApplication {
 
     public static void main(String[] args) throws LibraryException {
-        PoetryLibrary library = new PoetryLibraryFileAdapter("C:\\library\\MasaokaShiki.txt");
+        PoetryLibrary library = new PoetryLibraryFileAdapter("C:\\library\\Poetry.json");
         VersesProvider poetryReader = new PoetryReader(library);
         ConsoleAdapter application = new ConsoleAdapter(poetryReader);
 

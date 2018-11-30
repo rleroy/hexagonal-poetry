@@ -12,7 +12,7 @@ public class WebConfiguration {
 
     @Bean
     public PoetryLibrary poetryLibrary() {
-        return new PoetryLibraryFileAdapter("C:\\library\\MasaokaShiki.txt");
+        return new PoetryLibraryFileAdapter("C:\\library\\Poetry.json");
     }
 
     @Bean
