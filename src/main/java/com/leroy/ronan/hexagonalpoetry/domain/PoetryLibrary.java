@@ -1,5 +1,7 @@
 package com.leroy.ronan.hexagonalpoetry.domain;
 
+import java.util.List;
+
 public interface PoetryLibrary {
-    String getAPoem() throws LibraryException;
+    List<Poem> getAllPoems() throws LibraryException;
 }

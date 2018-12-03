@@ -1,13 +1,13 @@
-package com.leroy.ronan.hexagonalpoetry.right;
+package com.leroy.ronan.hexagonalpoetry.right.json;
 
-public class Poem {
+public class JsonPoem {
 
     private String author;
     private String title;
     private String publicationYear;
     private String poem;
 
-    public Poem() {
+    public JsonPoem() {
     }
 
     public String getAuthor() {

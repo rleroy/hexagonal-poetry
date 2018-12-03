@@ -1,4 +1,7 @@
-package com.leroy.ronan.hexagonalpoetry.right;
+package com.leroy.ronan.hexagonalpoetry.right.text;
+
+import com.leroy.ronan.hexagonalpoetry.domain.Poem;
+import com.leroy.ronan.hexagonalpoetry.right.PoetryLibraryFileReader;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -10,8 +13,7 @@ public class PoetryLibraryTextFileReader implements PoetryLibraryFileReader {
 
     @Override
     public List<Poem> getPoems(InputStream input) {
-        Poem poem = new Poem();
-        poem.setPoem(getPoemFromText(input));
+        Poem poem = new Poem(getPoemFromText(input));
         return List.of(poem);
     }
 

@@ -1,7 +1,10 @@
 package com.leroy.ronan.hexagonalpoetry.right;
 
 import com.leroy.ronan.hexagonalpoetry.domain.LibraryException;
+import com.leroy.ronan.hexagonalpoetry.domain.Poem;
 import com.leroy.ronan.hexagonalpoetry.domain.PoetryLibrary;
+import com.leroy.ronan.hexagonalpoetry.right.json.PoetryLibraryJsonFileReader;
+import com.leroy.ronan.hexagonalpoetry.right.text.PoetryLibraryTextFileReader;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,8 +22,8 @@ public class PoetryLibraryFileAdapter implements PoetryLibrary {
     }
 
     @Override
-    public String getAPoem() throws LibraryException {
-        return readPoemsFromSource(this.path).get(0).getPoem();
+    public List<Poem> getAllPoems() throws LibraryException {
+        return readPoemsFromSource(this.path);
     }
 
     private List<Poem> readPoemsFromSource(Path path) throws LibraryException {
